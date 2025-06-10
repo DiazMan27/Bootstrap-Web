@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroVia Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="bg-primary p-3 navbar navbar-expand-lg navbar-dark"">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fs-4 fw-semibold" href="#">
+                AeroVia Express
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto ">
+                    <li class="nav-item dropdown">
+                        <a class="text-white nav-link dropdown-toggle mx-3" href="#" role="button" data-bs-toggle="dropdown">
+                            Ofertas y destinos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="text-white nav-link dropdown-toggle mx-3" href="#" role="button" data-bs-toggle="dropdown">
+                            Mis viajes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mx-3" href="#">Centro de ayuda</a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="text-white nav-link mx-3" href="#">Estado de vuelo</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-secondary rounded-pill">Iniciar sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class=" bg-info p-3container-fluid px-0">  <!-- Contenedor fluido sin padding horizontal -->
+  <div class="row g-0">  <!-- Row sin gutter -->
+    <!-- Contenido de texto -->
+    <div class="col-lg-6 py-5 px-4">  <!-- Añadido padding horizontal -->
+      <h1 class="display-6 fw-bold mb-3">¡Vacaciones de verano!</h1>
+      <p class="fs-5 mb-3">Vuela por Chile y Sudamérica con hasta 40% de descuento</p>
+      <p class="mb-4">Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express</p>
+      <a href="#" class="text-primary text-decoration-underline fw-semibold">Compra aquí</a>
+    </div>
+    
+    <!-- Imagen pegada a la derecha -->
+    <div class="col-lg-6 pe-0">  <!-- Sin padding derecho -->
+      <img src="../assets/img/Insumo.jpg" 
+           alt="Isla tropical paradisíaca" 
+           class="img-fluid w-100 h-100 object-fit-cover shadow-lg" 
+           >  <!-- Altura mínima para mantener proporción -->
+    </div>
+  </div>
+</div>
+
+    <!-- Search Section -->
+    <section class="my-4 mx-auto w-95">
+        <div class="bg-white rounded-3 border border-gray-200 p-2">
+            <!-- Tabs - Horizontal Menu in cells -->
+            <div class="w-50 d-flex mb-3 border border-gray-200 rounded-2 border-bottom-2">
+                <!-- Celda Vuelos -->
+                <div class="border-end border-gray-200 px-3 py-2">
+                    <a href="#" class="text-primary fw-medium text-decoration-none d-block border-bottom border-primary border-2 pb-1">Vuelos</a>
+                </div>
+                <!-- Celda Paquetes -->
+                <div class="border-end border-gray-200 px-3 py-2">
+                    <a href="#" class="text-gray-500 text-decoration-none d-block">Paquetes</a>
+                </div>
+                <!-- Celda Hoteles -->
+                <div class="border-end border-gray-200 px-3 py-2">
+                    <a href="#" class="text-gray-500 text-decoration-none d-block">Hoteles</a>
+                </div>
+                <!-- Celda Autos -->
+                <div class="border-end border-gray-200 px-3 py-2">
+                    <a href="#" class="text-gray-500 text-decoration-none d-block">Autos</a>
+                </div>
+                <!-- Celda Seguros -->
+                <div class="border-end border-gray-200 px-3 py-2">
+                    <a href="#" class="text-gray-500 text-decoration-none d-block">Seguros</a>
+                </div>
+                <!-- Celda Upgrade -->
+                <div class="px-3 py-2 w-50">
+                    <a href="#" class="text-gray-500 text-decoration-none d-block">Upgrade</a>
+                </div>
+            </div>
+
+            <!-- Flight Options - Single Line -->
+            <div class="d-flex flex-wrap mb-3 gap-4">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" 
+                            >
+                        Ida y Vuelta 
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" 
+                            >
+                        Economy 
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" 
+                            >
+                        1 pasajero 
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- Search Form - Single Line -->
+            <div class="row g-3">
+                <div class="col-md-1">
+                    <label class="form-label"></label>
+                    <input type="text" class="form-control" placeholder="Origen">
+                </div>
+                
+                <div class="col-md-1">
+                    <label class="form-label"></label>
+                    <input type="text" class="form-control" placeholder="Destino">
+                </div>
+                
+                <div class="col-md-1">
+                    <label class="form-label"></label>
+                    <input type="text" class="form-control" placeholder="Fecha Ida">
+                </div>
+
+                <div class="col-md-2">
+                    <label class="form-label"></label>
+                    <input type="date" class="form-control" placeholder="Fecha Ida">
+                </div>
+                <div class="col-md-2">
+                    <label class="form-label"></label>
+                    <input type="text" class="form-control" placeholder="Fecha Vuelta">
+                </div>
+                
+                <div class="col-md-2">
+                    <label class="form-label"></label>
+                    <input type="text" class="form-control" placeholder="dd-mm-aaaa">
+                </div>
+                
+                <div class="col-md-2 d-flex align-items-end">
+                    <button class="btn btn-danger w-100">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
